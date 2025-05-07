@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="customBackground" format="color" />
+    <attr name="customTextColor" format="color" />
+</resources>

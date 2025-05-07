@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#40BFB4</color>
+    <color name="colorPrimaryText">#40BFB4</color>
+    <color name="colorPrimaryOpacity">#CC40BFB4</color>
+    <color name="colorPrimaryOpacity2">#5040BFB4</color>
+    <color name="colorPrimaryDark">#3B9F97</color>
+    <color name="red">#FF0000</color>
+    <color name="colorPrimaryOpacity3">#E6F8F7</color>
+    <color name="colorBannars">#CC3FBCB2</color>
+    <color name="colorCallDurationBg">#40BEB4</color>
+    <color name="colorCallFunctions">#FFFFFF</color>
+
+    <color name="darkYellow">#FABF35</color>
+    <color name="darkBrown">#6B3400</color>
+    <color name="darkred">#DB303F</color>
+    <color name="darkRed2">#C92929</color>
+    <color name="darkRedOpacity">#50DB303F</color>
+
+    <color name="darkRed">#B82733</color>
+    <color name="colorAccent">#40BFB4</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlackOpacity">#1A000000</color>
+
+    <color name="waitingBlack">#F4F4F4</color>
+    <color name="colorSemiWhite">#AAFFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorLightGray">#C8C8C8</color>
+    <color name="lightGray">#F0F0F0</color>
+    <color name="colorGray">#979797</color>
+    <color name="gray400">#94999E</color>
+    <color name="colorDarkGray">#59595B</color>
+    <color name="colorGrayOpacity">#CC59595B</color>
+    <color name="colorDarkGray2">#484848</color>
+    <color name="colorGrayButtonBorder">#4B4B4B</color>
+    <color name="colorPrimaryButtonBorder">#78B1B0</color>
+
+    <color name="colorRate">#F4DF4F</color>
+    <color name="colorDiscount">#DFA848</color>
+    <color name="colorlightyellowchild">#F9F871</color>
+
+
+    <!-- Status Colors -->
+    <color name="colorOnline">#5FDF48</color>
+    <color name="colorOffline">#B2B2B2</color>
+    <color name="colorBusy">#DF4848</color>
+    <color name="red_white">#f55c47</color>
+    <color name="purple">#5E4192</color>
+    <color name="purple2">#A8533F77</color>
+    <color name="lightpurble">#BFB3D3</color>
+    <color name="lightgreen">#C1EDEA</color>
+
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="off_white">#fffafafa</color>
+    <color name="greyish">#fff2f1f2</color>
+    <color name="black40opacity">#66000000</color>
+    <color name="black75">#BF000000</color>
+    <color name="in_progress_color">#B8E4E0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="darkGray">#565458</color>
+    <color name="darkGray2">#454545</color>
+    <color name="bg_gray_color">#F8F8F8</color>
+    <color name="darkLightGray">#7B7B7B</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="green">#4CAF50</color>
+    <color name="lightred">#FEEAEA</color>
+    <color name="yellow_light">#FFFAE6</color>
+    <color name="payment_sdk_primary_color">@color/colorPrimary</color>
+    <color name="payment_sdk_secondary_color">@color/colorPrimary</color>
+    <color name="payment_sdk_primary_font_color">#111112</color>
+    <color name="payment_sdk_secondary_font_color">#6D6C70</color>
+    <color name="payment_sdk_separators_color">@color/colorPrimary</color>
+    <color name="payment_sdk_stroke_color">#673AB7</color>
+    <color name="payment_sdk_button_text_color">#FFF</color>
+    <color name="payment_sdk_title_text_color">@color/colorPrimary</color>
+    <color name="payment_sdk_button_background_color">@color/colorPrimary</color>
+    <color name="payment_sdk_background_color">#F9FAFD</color>
+    <color name="payment_sdk_card_background_color">#F9FAFD</color>
+    <color name="colorQuranTxt">#40BEB4</color>
+    <color name="colorCallFunTx">#798086</color>
+    <color name="colorTeacherName">#181A1B</color>
+    <color name="colorCallFunIconOff">#797F86</color>
+    <color name="colorCallFunIconOn">#FFFFFF</color>
+    <color name="colorTeacherTxt">#000000</color>
+    <color name="colorRateCard">#FFFFFF</color>
+    <color name="colorCallFunctionsBg">#40BFB4</color>
+</resources>

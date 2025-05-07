@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/waitingBlack">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/teacherLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/waitingBlack"
+        tools:context="com.moddakir.call.view.teachers.TeacherEvaluationActivity">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_evaluate_connection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:strokeWidth="2dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingHorizontal="14dp"
+                        android:paddingVertical="20dp">
+
+                        <com.moddakir.call.view.widget.TextViewUniqueLight
+                            android:id="@+id/connection_evaluation_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/call_evaluation"
+                            android:textColor="@color/colorTeacherTxt"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center_horizontal"
+                            android:weightSum="7"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/connection_evaluation_tv">
+                            <View
+                                android:layout_width="20dp"
+                                android:layout_weight="1"
+                                android:layout_height="1dp"/>
+                            <ImageView
+                                android:id="@+id/smile1_evaluate_connection"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:minWidth="20dp"
+                                android:minHeight="20dp"
+                                android:src="@drawable/ic_smile1_unselected" />
+
+                            <ImageView
+                                android:id="@+id/smile2_evaluate_connection"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:minWidth="20dp"
+                                android:minHeight="20dp"
+                                android:src="@drawable/ic_smile2_unselected" />
+
+                            <ImageView
+                                android:id="@+id/smile3_evaluate_connection"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:minWidth="20dp"
+                                android:minHeight="20dp"
+                                android:src="@drawable/ic_smile3_unselected" />
+
+                            <ImageView
+                                android:id="@+id/smile4_evaluate_connection"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:minWidth="20dp"
+                                android:minHeight="20dp"
+
+                                android:src="@drawable/ic_smile4_unselected" />
+
+                            <ImageView
+                                android:id="@+id/smile5_evaluate_connection"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:minWidth="20dp"
+                                android:minHeight="20dp"
+                                android:src="@drawable/ic_smile5_unselected" />
+                            <View
+                                android:layout_width="20dp"
+                                android:layout_weight="1"
+                                android:layout_height="1dp"/>
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_teacher_image"
+                    android:layout_width="78dp"
+                    android:layout_height="78dp"
+                    android:layout_marginTop="30dp"
+                    android:elevation="2dp"
+                    android:src="@color/colorBackground"
+                    android:visibility="gone"
+                    app:civ_border_color="@color/colorWhite"
+                    app:civ_border_width="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/card_evaluate_connection" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_teacher_rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="11dp"
+                    app:cardCornerRadius="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/civ_teacher_image"
+                    app:strokeWidth="2dp">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="14dp"
+                        android:paddingVertical="20dp"
+                        >
+
+                        <com.moddakir.call.view.widget.TextViewUniqueLight
+                            android:id="@+id/teacher_evaluate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/teacherrating"
+                            android:textColor="@color/colorTeacherTxt"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.moddakir.call.view.widget.TextViewUniqueLight
+                            android:id="@+id/tv_teacher_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:textColor="@color/colorTeacherTxt"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/teacher_evaluate"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@+id/teacher_evaluate"
+                            app:layout_constraintTop_toTopOf="@+id/teacher_evaluate"
+                            tools:text="Yasmen Ahmed Hassan" />
+
+                        <LinearLayout
+                            android:id="@+id/evaluate_teacher_smiles_layout"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:gravity="center_horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tv_teacher_name">
+
+                            <View
+                                android:layout_width="20dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/smile1_evaluate_teacher"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:minWidth="20dp"
+                                android:minHeight="20dp"
+                                android:src="@drawable/ic_smile1_unselected" />
+
+                            <ImageView
+                                android:id="@+id/smile2_evaluate_teacher"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:minWidth="20dp"
+                                android:minHeight="20dp"
+                                android:src="@drawable/ic_smile2_unselected" />
+
+                            <ImageView
+                                android:id="@+id/smile3_evaluate_teacher"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:minWidth="20dp"
+                                android:minHeight="20dp"
+                                android:src="@drawable/ic_smile3_unselected" />
+
+                            <ImageView
+                                android:id="@+id/smile4_evaluate_teacher"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:minWidth="20dp"
+                                android:minHeight="20dp"
+
+                                android:src="@drawable/ic_smile4_unselected" />
+
+                            <ImageView
+                                android:id="@+id/smile5_evaluate_teacher"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:minWidth="20dp"
+                                android:minHeight="20dp"
+                                android:src="@drawable/ic_smile5_unselected" />
+                            <View
+                                android:layout_width="20dp"
+                                android:layout_weight="1"
+                                android:layout_height="1dp"/>
+                        </LinearLayout>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.moddakir.call.view.widget.ButtonCalibriBold
+                    android:id="@+id/btn_save"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_primary_active_button"
+                    android:gravity="center"
+                    android:text="@string/confirm"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/btn_cancel"
+                    app:layout_constraintEnd_toEndOf="@+id/card_teacher_rating"
+                    app:layout_constraintStart_toStartOf="@+id/card_teacher_rating" />
+
+                <com.moddakir.call.view.widget.ButtonCalibriBold
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/custom_rounded_white_primary_strock"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="@string/cancel"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/card_teacher_rating"
+                    app:layout_constraintStart_toStartOf="@+id/card_teacher_rating" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
