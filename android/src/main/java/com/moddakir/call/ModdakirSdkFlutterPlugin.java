@@ -14,7 +14,6 @@ import android.content.Context;
 import android.app.Activity;
 import androidx.annotation.NonNull;
 import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding;
-import io.flutter.plugin.common.PluginRegistry.Registrar;
 
 /** ModdakirSdkFlutterPlugin */
 public class ModdakirSdkFlutterPlugin implements FlutterPlugin, MethodCallHandler, ActivityAware {
@@ -35,7 +34,19 @@ public class ModdakirSdkFlutterPlugin implements FlutterPlugin, MethodCallHandle
     if (call.method.equals("getPlatformVersion")) {
       result.success("Android " + android.os.Build.VERSION.RELEASE);
     } else if (call.method.equals("startCall")) {
-        AgoraActivity.makeCall("sd_2","asdasd",activity,"Male", "Moussa","+201000215275","m.moussa@moddakir.com","ar", true, 0);
+      String moddakirId = call.argument("moddakirId");
+      String moddakirKey = call.argument("moddakirKey");
+      String gender = call.argument("gender");
+      String name = call.argument("name");
+      String phone = call.argument("phone");
+      String email = call.argument("email");
+      String language = call.argument("language");
+      Boolean isLightMode = call.argument("isLightMode");
+
+      System.out.println("moddakirKey: " + moddakirKey);
+      System.out.println("name: " + name);
+
+        AgoraActivity.makeCall(moddakirId, moddakirKey, activity, gender, name, phone, email, language, isLightMode, 0);
         result.success("Done"); 
     } else {
       result.notImplemented();

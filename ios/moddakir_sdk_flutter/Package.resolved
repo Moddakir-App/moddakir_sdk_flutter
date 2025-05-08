@@ -1,0 +1,50 @@
+{
+  "pins" : [
+    {
+      "identity" : "agoraaudio_ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AgoraIO/AgoraAudio_iOS",
+      "state" : {
+        "revision" : "173301334adfab9733171749e36641fe770d05a9",
+        "version" : "4.5.2"
+      }
+    },
+    {
+      "identity" : "agorainfra_ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AgoraIO/AgoraInfra_iOS.git",
+      "state" : {
+        "revision" : "c2781d81a1ac78b94fefd53171975acb426b6ac5",
+        "version" : "1.2.13"
+      }
+    },
+    {
+      "identity" : "moddakirsdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Moddakir-App/ModdakirSDK",
+      "state" : {
+        "revision" : "ebd3874cf75aa846396c6a8e5ba54dcf412844ae",
+        "version" : "0.1.6"
+      }
+    },
+    {
+      "identity" : "networkmanager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Amin-0-1/NetworkManager",
+      "state" : {
+        "revision" : "9c8a614b18cd087d83e5cf746a8e271f9fff4627",
+        "version" : "1.6.2"
+      }
+    },
+    {
+      "identity" : "swiftygif",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/alexiscreuzot/SwiftyGif",
+      "state" : {
+        "revision" : "4430cbc148baa3907651d40562d96325426f409a",
+        "version" : "5.4.5"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -16,8 +16,19 @@ class MethodChannelModdakirSdkFlutter extends ModdakirSdkFlutterPlatform {
   }
 
   @override
-  Future<String?> startCall() async {
-    final version = await methodChannel.invokeMethod<String>('startCall');
+  Future<String?> startCall(String moddakirId, String moddakirKey, String name, String email, String phone, String gender, [bool isLightMode = true, String language = 'en']) async {
+    final version = await methodChannel.invokeMethod<String>('startCall', 
+    {
+      'moddakirId': moddakirId,
+      'moddakirKey': moddakirKey,
+      'name': name,
+      'email': email,
+      'gender': gender,
+      'isLightMode': isLightMode,
+      'language': language,
+      'phone': phone,
+    }
+    );
     return version;
   }
 }

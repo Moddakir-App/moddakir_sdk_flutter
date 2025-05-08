@@ -26,10 +26,10 @@ void main() {
   });
 
   test('getPlatformVersion', () async {
-    ModdakirSdkFlutter ModdakirSdkFlutterPlugin = ModdakirSdkFlutter();
+    ModdakirSdkFlutter moddakirSdkFlutterPlugin = ModdakirSdkFlutter();
     MockModdakirSdkFlutterPlatform fakePlatform = MockModdakirSdkFlutterPlatform();
     ModdakirSdkFlutterPlatform.instance = fakePlatform;
 
-    expect(await ModdakirSdkFlutterPlugin.getPlatformVersion(), '42');
+    expect(await moddakirSdkFlutterPlugin.getPlatformVersion(), '42');
   });
 }

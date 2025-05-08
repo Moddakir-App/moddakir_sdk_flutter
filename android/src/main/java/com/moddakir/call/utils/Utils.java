@@ -65,34 +65,33 @@ public class Utils {
     }
 
     public static void changeSweetAlertDialogStyle(SweetAlertDialog alertDialog, Context context) {
-        Button confirm = (Button) alertDialog.findViewById(R.id.confirm_button);
-        Button cancel = (Button) alertDialog.findViewById(R.id.cancel_button);
-        TextView titleTV = (TextView) alertDialog.findViewById(R.id.title_text
-        );
-        if (titleTV != null) {
-            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-            params.setMargins(0, 0, 0, 32);
-            titleTV.setLayoutParams(params);
-//            titleTV.setTextSize(Constants.DEFAULT_TEXT_SIZE);
-        }
-        if (confirm != null) {
-            confirm.setBackgroundColor(ContextCompat.getColor(context, R.color.colorPrimary));
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                confirm.setBackgroundTintList(ContextCompat.getColorStateList(context, R.color.colorPrimary));
-            }
-            confirm.setBackgroundResource(R.drawable.custom_primary_bac);
-            confirm.setTextSize(COMPLEX_UNIT_DIP, Constants.DEFAULT_TEXT_SIZE);
-        }
+//         Button confirm = (Button) alertDialog.findViewById(R.id.confirm_button);
+//         Button cancel =(Button) alertDialog.findViewById(R.id.cancel_button);
+//         TextView titleTV = (TextView) alertDialog.findViewById(R.id.title_text);
+//         if (titleTV != null) {
+//             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+//             params.setMargins(0, 0, 0, 32);
+//             titleTV.setLayoutParams(params);
+// //            titleTV.setTextSize(Constants.DEFAULT_TEXT_SIZE);
+//         }
+//         if (confirm != null) {
+//             confirm.setBackgroundColor(ContextCompat.getColor(context, R.color.colorPrimary));
+//             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+//                 confirm.setBackgroundTintList(ContextCompat.getColorStateList(context, R.color.colorPrimary));
+//             }
+//             confirm.setBackgroundResource(R.drawable.custom_primary_bac);
+//             confirm.setTextSize(COMPLEX_UNIT_DIP, Constants.DEFAULT_TEXT_SIZE);
+//         }
 
-        if ((cancel != null)) {
-            cancel.setBackgroundColor(ContextCompat.getColor(context, R.color.red_btn_bg_color));
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                cancel.setBackgroundTintList(ContextCompat.getColorStateList(context, R.color.red_btn_bg_color));
-            }
-            cancel.setBackgroundResource(R.drawable.custom_red_12_background);
-            cancel.setTextSize(COMPLEX_UNIT_DIP, Constants.DEFAULT_TEXT_SIZE);
+//         if ((cancel != null)) {
+//             cancel.setBackgroundColor(ContextCompat.getColor(context, R.color.red_btn_bg_color));
+//             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+//                 cancel.setBackgroundTintList(ContextCompat.getColorStateList(context, R.color.red_btn_bg_color));
+//             }
+//             cancel.setBackgroundResource(R.drawable.custom_red_12_background);
+//             cancel.setTextSize(COMPLEX_UNIT_DIP, Constants.DEFAULT_TEXT_SIZE);
 
-        }
+//         }
     }
 
 

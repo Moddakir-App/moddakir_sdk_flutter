@@ -1,12 +1,1 @@
 rootProject.name = 'moddakir_sdk_flutter'
-// include ':random-call'
-// project(':random-call').projectDir = new File(settingsDir, 'random-call')
-
-// include ':random-call'
-// setProjectDir(':random-call', file('../random-call/android'))
-
-// include ':random-call'
-// // project(':random-call').projectDir = new File(rootProject.projectDir, 'android/random-call')
-// project(':random-call').projectDir = new File(rootProject.projectDir, 'random-call')
-
-
