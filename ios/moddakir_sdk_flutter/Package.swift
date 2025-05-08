@@ -12,7 +12,7 @@ let package: Package = Package(
         .library(name: "moddakir-sdk-flutter", targets: ["moddakir_sdk_flutter"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Moddakir-App/ModdakirSDK", .upToNextMajor(from: "0.1.6")),
+        .package(url: "https://github.com/Moddakir-App/ModdakirSDK", .upToNextMajor(from: "0.1.7")),
     ],
     targets: [
         .target(

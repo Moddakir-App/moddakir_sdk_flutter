@@ -15,6 +15,8 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   final _ModdakirSdkFlutterPlugin = ModdakirSdkFlutter();
+  String gender = "Male";
+  bool isLightMode = true;
 
   @override
   void initState() {
@@ -36,6 +38,38 @@ class _MyAppState extends State<MyApp> {
                   padding: const EdgeInsets.all(30.0),
                   child: Text('Start a call with a randomly selected teacher of the same gender'),
                 ),
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      DropdownButton<String>(
+                        value: isLightMode ? 'Light Mode' : 'Dark Mode',
+                        items:
+                            <String>['Light Mode', 'Dark Mode'].map((String value) {
+                              return DropdownMenuItem<String>(value: value, child: Text(value));
+                            }).toList(),
+                        onChanged: (item) {
+                          setState(() {
+                            isLightMode = item == "Light Mode";
+                          });
+                        },
+                      ),
+                      DropdownButton<String>(
+                        value: gender,
+                        items:
+                            <String>['Male', 'Female'].map((String value) {
+                              return DropdownMenuItem<String>(value: value, child: Text(value));
+                            }).toList(),
+                        onChanged: (item) {
+                          setState(() {
+                            gender = item ?? 'Male';
+                          });
+                        },
+                      ),
+                    ],
+                  ),
+                ),
                 SizedBox(height: 20),
                 TextButton(
                   onPressed: () {
@@ -44,9 +78,9 @@ class _MyAppState extends State<MyApp> {
                       "ts6824-adaf49", // For Testing Env use ModdakirTestKey
                       "m.moussa@moddakir.com",
                       "Mahmoud Moussa",
-                      "+201000215275",
-                      "Male",
-                      true,
+                      gender,
+                      "201000215275",
+                      isLightMode,
                       "ar",
                     );
                   },

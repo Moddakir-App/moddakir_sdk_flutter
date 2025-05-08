@@ -7,15 +7,13 @@ import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 class MockModdakirSdkFlutterPlatform
     with MockPlatformInterfaceMixin
     implements ModdakirSdkFlutterPlatform {
-
-  @override
-  Future<String?> getPlatformVersion() => Future.value('42');
   
   @override
-  Future<String?> startCall() {
+  Future<String?> startCall(String moddakirId, String moddakirKey, String name, String email, String gender, [String phone = '', bool isLightMode = true, String language = 'en']) {
     // TODO: implement startCall
     throw UnimplementedError();
   }
+
 }
 
 void main() {
@@ -23,13 +21,5 @@ void main() {
 
   test('$MethodChannelModdakirSdkFlutter is the default instance', () {
     expect(initialPlatform, isInstanceOf<MethodChannelModdakirSdkFlutter>());
-  });
-
-  test('getPlatformVersion', () async {
-    ModdakirSdkFlutter moddakirSdkFlutterPlugin = ModdakirSdkFlutter();
-    MockModdakirSdkFlutterPlatform fakePlatform = MockModdakirSdkFlutterPlatform();
-    ModdakirSdkFlutterPlatform.instance = fakePlatform;
-
-    expect(await moddakirSdkFlutterPlugin.getPlatformVersion(), '42');
   });
 }

@@ -14,8 +14,6 @@ public class ModdakirSdkFlutterPlugin: NSObject, FlutterPlugin {
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
     
     switch call.method {
-    case "getPlatformVersion":
-      result("iOS " + UIDevice.current.systemVersion)
     case "startCall":
 
     let controller : FlutterViewController = UIApplication.shared.keyWindow?.rootViewController as! FlutterViewController
@@ -25,6 +23,7 @@ public class ModdakirSdkFlutterPlugin: NSObject, FlutterPlugin {
       let moddakirId = (arguments["moddakirId"] as? String) ?? ""
       let moddakirKey = (arguments["moddakirKey"] as? String) ?? ""
       let name = (arguments["name"]  as? String) ?? ""
+      let phone = (arguments["phone"]  as? String) ?? ""
       let genderString = (arguments["gender"]  as? String) ?? ""
       var gender: ModdakirGender = .male
       if genderString == "Female" {
@@ -44,7 +43,8 @@ public class ModdakirSdkFlutterPlugin: NSObject, FlutterPlugin {
               userInfo: .init(
                   fullName: name,
                   gender: gender,
-                  email: email
+                  email: email,
+                  phone: phone
               ),
               rootView: controller,
               primaryColor: color,              

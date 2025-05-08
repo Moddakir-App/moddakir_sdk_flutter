@@ -23,11 +23,7 @@ abstract class ModdakirSdkFlutterPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<String?> getPlatformVersion() {
-    throw UnimplementedError('platformVersion() has not been implemented.');
-  }
-
-  Future<String?> startCall(String moddakirId, String moddakirKey, String name, String email, String phone,String gender, [bool isLightMode = true, String language = 'en']) async {
+  Future<String?> startCall(String moddakirId, String moddakirKey, String name, String email,String gender, [String phone = '', bool isLightMode = true, String language = 'en']) async {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
 }

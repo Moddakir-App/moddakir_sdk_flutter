@@ -10,13 +10,7 @@ class MethodChannelModdakirSdkFlutter extends ModdakirSdkFlutterPlatform {
   final methodChannel = const MethodChannel('moddakir_sdk_flutter');
 
   @override
-  Future<String?> getPlatformVersion() async {
-    final version = await methodChannel.invokeMethod<String>('getPlatformVersion');
-    return version;
-  }
-
-  @override
-  Future<String?> startCall(String moddakirId, String moddakirKey, String name, String email, String phone, String gender, [bool isLightMode = true, String language = 'en']) async {
+  Future<String?> startCall(String moddakirId, String moddakirKey, String name, String email, String gender, [String phone = '',bool isLightMode = true, String language = 'en']) async {
     final version = await methodChannel.invokeMethod<String>('startCall', 
     {
       'moddakirId': moddakirId,

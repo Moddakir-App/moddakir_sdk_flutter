@@ -31,9 +31,7 @@ public class ModdakirSdkFlutterPlugin implements FlutterPlugin, MethodCallHandle
 
   @Override
   public void onMethodCall(@NonNull MethodCall call, @NonNull Result result) {
-    if (call.method.equals("getPlatformVersion")) {
-      result.success("Android " + android.os.Build.VERSION.RELEASE);
-    } else if (call.method.equals("startCall")) {
+    if (call.method.equals("startCall")) {
       String moddakirId = call.argument("moddakirId");
       String moddakirKey = call.argument("moddakirKey");
       String gender = call.argument("gender");

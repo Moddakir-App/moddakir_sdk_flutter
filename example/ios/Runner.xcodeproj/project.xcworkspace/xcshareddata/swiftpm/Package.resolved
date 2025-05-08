@@ -24,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Moddakir-App/ModdakirSDK",
       "state" : {
-        "revision" : "ebd3874cf75aa846396c6a8e5ba54dcf412844ae",
-        "version" : "0.1.6"
+        "revision" : "0ef01650ab7637334fe82701a0811b604bffde7f",
+        "version" : "0.1.7"
       }
     },
     {
