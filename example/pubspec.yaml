@@ -1,11 +1,12 @@
 name: moddakir_sdk_flutter_example
 description: "Demonstrates how to use the moddakir_sdk_flutter plugin."
+version: 0.0.2
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 environment:
-  sdk: ^3.8.0-278.2.beta
+  sdk: ^3.7.2
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
