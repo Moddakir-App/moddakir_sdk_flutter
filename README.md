@@ -3,6 +3,10 @@
  Aflutter package for Integrating with Moddakir Services, it connects you Directly with on of our distinct teachers in order to share the learning of the Holy Qur’an 📖
 
 ## Getting Started
+```bash
+Flutter version -> 3.29.3
+SDK version -> 3.7.2
+```
 ### Adding moddakir_sdk_flutter package to pubspec.yaml file
 ```bash
 dependencies:
@@ -14,7 +18,13 @@ dependencies:
      url: https://github.com/Moddakir-App/moddakir_sdk_flutter.git
      ref: main
 ```
-Run Command
+
+Enable Swift Package Manager Support For IOS
+```bash
+flutter config --enable-swift-package-manager
+```
+
+Get Packages
 ```bash
 flutter pub get
 ```
